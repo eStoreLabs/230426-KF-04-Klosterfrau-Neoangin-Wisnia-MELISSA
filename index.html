@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>neo-angin wisnia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+  <style>
+    #es-neo.es-neo {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  max-width: 790px;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  color: #000;
+  background: #fff;
+}
+
+#es-neo.es-neo * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+#es-neo.es-neo img,
+#es-neo.es-neo picture {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+#es-neo.es-neo p #es-neo.es-neo li {
+  line-height: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+#es-neo.es-neo .es-neo__sup,
+#es-neo.es-neo .es-neo__sub {
+  line-height: 0;
+  font-size: 60%;
+}
+
+#es-neo.es-neo .es-neo__strong {
+  font-weight: 700;
+}
+
+#es-neo.es-neo .es-kv__img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+#es-neo.es-neo .es-kv__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 48px;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  text-align: center;
+  margin-bottom: 16px;
+  margin-inline: 5%;
+}
+
+#es-neo.es-neo .es-kv__subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 36px;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  color: #c82322;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+#es-neo.es-neo .es-kv__img--logo {
+  margin-inline-start: 0;
+  width: 70%;
+  max-width: unset;
+  margin-bottom: 24px;
+}
+
+#es-neo.es-neo .es-kv__img--desktop {
+  display: none;
+}
+
+#es-neo.es-neo .es-kv__content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-inline: 16px;
+}
+
+#es-neo.es-neo .es-kv__packshot {
+  width: 70%;
+  padding-top: 64px;
+}
+
+#es-neo.es-neo .es-kv__wrapper {
+  width: 30%;
+  align-self: flex-start;
+}
+
+#es-neo.es-neo .es-kv__img--cherry {
+  width: 60%;
+  margin-bottom: 8px;
+}
+
+#es-neo.es-neo .es-kv__label {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 16px;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  color: #c82322;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#es-neo.es-neo .es-benefits__img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+#es-neo.es-neo .es-benefits {
+  background-image: url("./img/red-bg.webp");
+  background-repeat: no-repeat;
+  height: 2246px;
+  background-position: top center;
+  margin-top: -20%;
+  margin-bottom: 48px;
+}
+
+#es-neo.es-neo .es-benefits__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 36px;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  text-align: left;
+  margin-bottom: 64px;
+  max-width: 250px;
+  margin-left: 24px;
+  padding-top: 128px;
+}
+
+#es-neo.es-neo .es-benefits__name {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 36px;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  text-align: left;
+  margin-bottom: 64px;
+  max-width: 250px;
+  margin-left: 24px;
+  padding-top: 48px;
+}
+
+#es-neo.es-neo .es-benefits__subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 32px;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  text-align: left;
+  margin-bottom: 64px;
+  margin-left: 24px;
+  margin-top: -50px;
+  max-width: 340px;
+}
+
+#es-neo.es-neo .es-benefits__subtitle--2 {
+  margin-bottom: 24px;
+  margin-top: 80px;
+  max-width: 230px;
+}
+
+#es-neo.es-neo .es-benefits__content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-inline: 24px;
+}
+
+#es-neo.es-neo .es-benefits__item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+#es-neo.es-neo .es-benefits__txt {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  text-align: left;
+  margin-left: 24px;
+  padding-bottom: 32px;
+}
+
+#es-neo.es-neo .es-benefits__icon {
+  width: 90px;
+}
+
+#es-neo.es-neo .es-benefits__picture {
+  margin-top: -175px;
+  position: relative;
+  max-width: 420px;
+  margin-left: -50px;
+}
+
+#es-neo.es-neo .es-benefits__picture::after {
+  content: url("./img/arrow-5.webp");
+  position: absolute;
+  bottom: 55%;
+  right: 5%;
+}
+
+#es-neo.es-neo .es-benefits__list {
+  margin: 0;
+  padding: 0;
+  list-style: url("./img/thick.webp") outside;
+  padding-left: 40px;
+  max-width: 315px;
+}
+
+#es-neo.es-neo .es-benefits__symbol {
+  width: 150px;
+  margin-inline-start: auto;
+  margin-inline-end: 10%;
+  position: relative;
+}
+
+#es-neo.es-neo .es-benefits__symbol::after {
+  content: url("./img/arrow-6.webp");
+  position: absolute;
+  bottom: 25%;
+  left: -65%;
+}
+
+#es-neo.es-neo .es-info__img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+#es-neo.es-neo .es-info__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 32px;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  text-align: center;
+  margin-bottom: 16px;
+}
+#es-neo.es-neo .es-info__title--span {
+  color: #c82322;
+}
+
+#es-neo.es-neo .es-info__txt {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  color: #000;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+#es-neo.es-neo .es-info__picture {
+  width: 90%;
+  margin-inline-start: auto;
+}
+
+#es-neo.es-neo .es-cross__img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+#es-neo.es-neo .es-cross {
+  background-image: url("./img/red-bg-mobile.webp");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+#es-neo.es-neo .es-cross__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 36px;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  text-align: left;
+  margin-bottom: 16px;
+  max-width: 290px;
+  margin-left: 24px;
+}
+#es-neo.es-neo .es-cross__title--span {
+  color: #c82322;
+}
+
+#es-neo.es-neo .es-cross__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  gap: 16px;
+  padding-bottom: 32px;
+  position: relative;
+}
+
+#es-neo.es-neo .es-cross__content--desktop {
+  display: none;
+}
+
+#es-neo.es-neo .es-cross__name {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 24px;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+#es-neo.es-neo .es-cross__desc {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#es-neo.es-neo .es-cross__link {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  display: block;
+  color: #c82322;
+  background-color: #fff;
+  text-decoration: none;
+  padding: 16px 24px;
+  font-size: 18px;
+  text-align: center;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 55px;
+  margin-bottom: 16px;
+  max-width: 260px;
+  border: 2px solid white;
+}
+
+#es-neo.es-neo .es-cross__link:hover {
+  background: #c82322;
+  color: #fff;
+}
+
+#es-neo.es-neo .es-disclaimer {
+  background: rgb(130,33,33);
+  background: linear-gradient(90deg, rgba(130,33,33,1) 0%, rgba(145,33,33,1) 100%);
+}
+
+#es-neo.es-neo .es-disclaimer__text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  text-align: left;
+  padding-bottom: 32px;
+  margin-inline: 24px;
+}
+
+#es-neo.es-neo .es-disclaimer__text--1 {
+  font-size: 18px;
+}
+
+#es-neo.es-neo .es-disclaimer__text--2 {
+  font-size: 32px;
+}
+
+@media screen and (min-width: 999px) {
+  #es-neo.es-neo .es-kv__img--mobile {
+    display: none;
+  }
+  #es-neo.es-neo .es-kv__img--desktop {
+    display: block;
+  }
+  #es-neo.es-neo .es-kv__img--logo {
+    width: 30%;
+  }
+  #es-neo.es-neo .es-kv__title {
+    font-size: 48px;
+    margin-top: -140px;
+    margin-bottom: 0;
+    margin-left: 25%;
+  }
+  #es-neo.es-neo .es-kv__subtitle {
+    font-size: 48px;
+    margin-left: 25%;
+    margin-bottom: 48px;
+  }
+  #es-neo.es-neo .es-kv__content {
+    display: block;
+    position: relative;
+  }
+  #es-neo.es-neo .es-kv__packshot {
+    width: 50%;
+    display: block;
+    margin-inline: auto;
+  }
+  #es-neo.es-neo .es-kv__wrapper {
+    position: absolute;
+    top: 4%;
+    right: 4%;
+    width: unset;
+  }
+  #es-neo.es-neo .es-kv__label {
+    font-size: 24px;
+    width: unset;
+  }
+  #es-neo.es-neo .es-benefits {
+    background-image: url("./img/red-bg-desktop.webp");
+  }
+  #es-neo.es-neo .es-benefits__title {
+    font-size: 42px;
+    padding-top: 250px;
+    max-width: unset;
+    margin-bottom: 200px;
+    position: relative;
+    margin-left: 48px;
+  }
+  #es-neo.es-neo .es-benefits__title::after {
+    content: url("./img/arrow-1.webp");
+    position: absolute;
+    bottom: -44%;
+    left: 38%;
+  }
+  #es-neo.es-neo .es-benefits__content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+  }
+  #es-neo.es-neo .es-benefits__txt {
+    font-size: 18px;
+  }
+  #es-neo.es-neo .es-benefits__icon {
+    width: 80px;
+  }
+  #es-neo.es-neo .es-benefits__item {
+    gap: 16px;
+    align-items: center;
+  }
+  #es-neo.es-neo .es-benefits__picture::after {
+    content: url("./img/arrow-2.webp");
+    position: absolute;
+    bottom: 65%;
+    right: 16%;
+  }
+  #es-neo.es-neo .es-benefits__picture {
+    max-width: 550px;
+    margin-top: -175px;
+    margin-left: -20px;
+  }
+  #es-neo.es-neo .es-benefits__img--woman {
+    margin-inline-start: 0;
+  }
+  #es-neo.es-neo .es-benefits__subtitle--1 {
+    margin-top: -555px;
+    max-width: unset;
+    margin-left: 46%;
+    font-size: 28px;
+  }
+  #es-neo.es-neo .es-benefits__list {
+    margin-left: 60%;
+  }
+  #es-neo.es-neo .es-benefits__symbol {
+    width: 175px;
+    margin-left: 24%;
+  }
+  #es-neo.es-neo .es-benefits__name {
+    font-size: 42px;
+    padding-top: 0;
+    max-width: unset;
+    margin-bottom: 100px;
+    position: relative;
+    margin-left: 48px;
+  }
+  #es-neo.es-neo .es-benefits__symbol::after {
+    content: url("./img/arrow-3.webp");
+    bottom: 10%;
+  }
+  #es-neo.es-neo .es-benefits__subtitle--2 {
+    margin-top: -175px;
+    max-width: unset;
+    margin-left: 50%;
+    font-size: 28px;
+  }
+  #es-neo.es-neo .es-benefits__txt--2 {
+    margin-left: 50%;
+  }
+  #es-neo.es-neo .es-info__title {
+    font-size: 32px;
+    padding-top: 48px;
+  }
+  #es-neo.es-neo .es-info__txt {
+    font-size: 22px;
+  }
+  #es-neo.es-neo .es-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: -550px;
+  }
+  #es-neo.es-neo .es-info__picture {
+    width: 60%;
+  }
+  #es-neo.es-neo .es-info__content {
+    width: 40%;
+    position: relative;
+  }
+  #es-neo.es-neo .es-info__content::after {
+    content: url("./img/arrow-4.webp");
+    position: absolute;
+    bottom: -30%;
+    left: 35%;
+  }
+  #es-neo.es-neo .es-cross__content--mobile {
+    display: none;
+  }  
+  #es-neo.es-neo .es-cross__content--desktop {
+    display: block;
+  }
+  #es-neo.es-neo .es-cross__title {
+    font-size: 32px;
+    max-width: unset;
+    margin-bottom: 36px;
+  }
+  #es-neo.es-neo .es-cross__items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    margin-top: 96px;
+  }
+  #es-neo.es-neo .es-cross__item--1::after {
+    content: url("./img/arrow-7.webp");
+    position: absolute;
+    top: -125px;
+    left: 135px;
+  }
+  #es-neo.es-neo .es-cross__item--2::after {
+    content: url("./img/arrow-8.webp");
+    position: absolute;
+    top: -100px;
+    left: 15px;
+  }
+  #es-neo.es-neo .es-cross__item--3::after {
+    content: url("./img/arrow-9.webp");
+    position: absolute;
+    top: -145px;
+    left: 35px;
+  }
+  #es-neo.es-neo .es-cross__name {
+    font-size: 22px;
+  }
+  #es-neo.es-neo .es-cross__link {
+    font-size: 18px;
+  }
+  #es-neo.es-neo .es-disclaimer--mobile {
+    display: none;
+  }
+  #es-neo.es-neo .es-disclaimer {
+    background: transparent;
+  }
+  #es-neo.es-neo .es-disclaimer__text {
+    font-size: 16px;
+    margin-inline: 32px;
+  }
+  #es-neo.es-neo .es-disclaimer__text--1 {
+    font-size: 24px;
+  }
+  #es-neo.es-neo .es-disclaimer__text--2 {
+    font-size: 32px;
+  }
+}
+  </style>
+</head>
+
+<body>
+  <div class="es-neo" id="es-neo">
+
+    <div class="es-kv">
+      <img class="es-kv__img es-kv__img--logo es-kv__img--mobile" src="./img/kv-mobile.webp" alt="">
+      <img class="es-lv__img es-kv__img--logo es-kv__img--desktop" src="./img/kv-desktop.webp" alt="">
+      <div class="es-kv__title">
+        Każdy ból&nbsp;gardła 
+      </div>
+      <div class="es-kv__subtitle">
+        to&nbsp;neo-anginowy ból&nbsp;gardła
+      </div>
+      <div class="es-kv__content">
+        <div class="es-kv__packshot">
+          <img src="./img/packshot.webp" alt="" class="es-kv__img">
+        </div>
+        <div class="es-kv__wrapper">
+          <div class="es-kv__picture">
+            <img class="es-kv__img es-kv__img--cherry" src="./img/cherry.webp" alt="">
+          </div>
+          <div class="es-kv__label">
+            wiśniowy <br> smak
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="es-benefits">
+      <div class="es-benefits__title">
+        Jak działa neo-angin<sup class="es-neo__sup">®</sup>?
+      </div>
+      <div class="es-benefits__content">
+        <div class="es-benefits__item">
+          <div class="es-benefits__icon">
+            <img class="es-benefits__img" src="./img/icon-1.webp" alt="">
+          </div>
+          <div class="es-benefits__txt">Przeciwwirusowo <br> Przeciwbakteryjnie <br> Przeciwgrzybiczo</div>
+        </div>
+        <div class="es-benefits__item">
+          <div class="es-benefits__icon">
+            <img class="es-benefits__img" src="./img/icon-2.webp" alt="">
+          </div>
+          <div class="es-benefits__txt">Błyskawicznie! <br> Działanie już po <br><strong class="es-neo__strong">5 minutach<sup class="es-neo__sup">*</sup>!</strong></div>
+        </div>
+      </div>
+      <div class="es-benefits__picture">
+        <img src="./img/woman.webp" alt="" class="es-benefits__img es-benefits__img--woman">
+      </div>
+      <div class="es-benefits__subtitle es-benefits__subtitle--1">
+        Szybka ulga w&nbsp;bólu gardła<sup class="es-neo__sup">*</sup><br>- łagodzi obrzęk, zaczerwienienie oraz trudności w&nbsp;przełykaniu
+      </div>
+      <ol class="es-benefits__list">
+        <li class="es-benefits__txt">w wygodnej formie pastylek do&nbsp;ssania bez&nbsp;cukru</li>
+        <li class="es-benefits__txt">dla dorosłych i&nbsp;dzieci od&nbsp;6.&nbsp;roku&nbsp;życia</li>
+        <li class="es-benefits__txt">miej neo-angin<sup class="es-neo__sup">®</sup> zawsze <br> przy sobie, dla szybkiej <br> ulgi w&nbsp;bólu gardła<sup class="es-neo__sup">*</sup></li>
+      </ol>
+      <div class="es-benefits__name">
+        Dawkowanie
+      </div>
+      <div class="es-benefits__symbol">
+        <img src="./img/icon-3.webp" alt="" class="es-benefits__img">
+      </div>
+      <div class="es-benefits__subtitle es-benefits__subtitle--2">
+        1&nbsp;pastylka co 2-3&nbsp;godziny.
+      </div>
+      <div class="es-benefits__txt es-benefits__txt--2">Nie więcej niż 6 pastylek <br> neo-angin<sup class="es-neo__sup">®</sup> na dobę.</div>
+    </div>
+
+    <div class="es-info">
+      <div class="es-info__content">
+        <div class="es-info__title">
+          Zastanawiasz się, <br> <span class="es-info__title--span">co na ból gardła?</span>
+        </div>
+        <div class="es-info__txt">
+          Wybierz neo-angin<sup class="es-neo__sup">®</sup> - <br> pastylki do ssania bez cukru<br>o wiśniowym smaku!
+        </div>
+      </div>
+      <div class="es-info__picture">
+        <img src="./img/woman-2.webp" alt="" class="es-info__img">
+      </div>
+    </div>
+
+    <div class="es-cross">
+      <div class="es-cross__title">
+        Poznaj też inne produkty <span class="es-cross__title--span">neo-angin<sup class="es-neo__sup">®</sup>!</span>
+      </div>
+      <div class="es-cross__content es-cross__content--mobile">
+        <div class="es-cross__item">
+          <div class="es-cross__picture">
+            <img src="./img/cross-1.webp" alt="" class="es-cross__img">
+          </div>
+          <div class="es-cross__name">
+            neo-angin<sup class="es-neo__sup">®</sup><br>klasyczny<br><span class="es-cross__desc">tabletki do ssania</span>
+          </div>
+          <a href="https://www.apteka-melissa.pl/produkt/neo-angin-z-cukrem-24-past-do-ssania,2670.html" target="_blank" class="es-cross__link">
+            Dowiedz się więcej
+          </a>
+        </div>
+        <div class="es-cross__item">
+          <div class="es-cross__picture">
+            <img src="./img/cross-2.webp" alt="" class="es-cross__img">
+          </div>
+          <div class="es-cross__name">
+            neo-angin<sup class="es-neo__sup">®</sup><br>bez cukru<br><span class="es-cross__desc">tabletki do ssania</span>
+          </div>
+          <a href="https://www.apteka-melissa.pl/produkt/neo-angin-bez-cukru-24-past-do-ssania,1166.html" target="_blank" class="es-cross__link">
+            Dowiedz się więcej
+          </a>
+        </div>
+        <div class="es-cross__item">
+          <div class="es-cross__picture">
+            <img src="./img/cross-3.webp" alt="" class="es-cross__img">
+          </div>
+          <div class="es-cross__name">
+            Benzydamine  <br>neo-angin<sup class="es-neo__sup">®</sup><br><span class="es-cross__desc">aerozol</span>
+          </div>
+          <a href="https://www.apteka-melissa.pl/produkt/benzydamine-neo-angin-forte-15-ml,73319.html" target="_blank" class="es-cross__link">
+            Dowiedz się więcej
+          </a>
+        </div>
+      </div>
+      <div class="es-cross__content es-cross__content--desktop">
+        <img src="./img/cross-desktop.webp" alt="" class="es-cross__img">
+        <div class="es-cross__items">
+          <div class="es-cross__item es-cross__item--1">
+            <div class="es-cross__name">
+              neo-angin<sup class="es-neo__sup">®</sup><br>klasyczny<br><span class="es-cross__desc">tabletki do ssania</span>
+            </div>
+            <a href="https://www.apteka-melissa.pl/produkt/neo-angin-z-cukrem-24-past-do-ssania,2670.html" target="_blank" class="es-cross__link">
+              Dowiedz się więcej
+            </a>
+          </div>
+          <div class="es-cross__item es-cross__item--2">
+            <div class="es-cross__name">
+              neo-angin<sup class="es-neo__sup">®</sup><br>bez cukru<br><span class="es-cross__desc">tabletki do ssania</span>
+            </div>
+            <a href="https://www.apteka-melissa.pl/produkt/neo-angin-bez-cukru-24-past-do-ssania,1166.html" target="_blank" class="es-cross__link">
+              Dowiedz się więcej
+            </a>
+          </div>
+          <div class="es-cross__item es-cross__item--3">
+            <div class="es-cross__name">
+              Benzydamine  <br>neo-angin<sup class="es-neo__sup">®</sup><br><span class="es-cross__desc">aerozol</span>
+            </div>
+            <a href="https://www.apteka-melissa.pl/produkt/benzydamine-neo-angin-forte-15-ml,73319.html" target="_blank" class="es-cross__link">
+              Dowiedz się więcej
+            </a>
+          </div>
+        </div>
+        <div class="es-disclaimer">
+          <div class="es-disclaimer__text">
+            *CHPL neo-angin wiśnia pkt. 5.1: rozpoczyna działanie w&nbsp;ciągu 5-10 minut.
+          </div>
+          <div class="es-disclaimer__text">
+            <strong class="es-neo__strong">neo-angin<sup class="es-neo__sup">®</sup> wiśnia, pastylki twarde, neo-angin<sup class="es-neo__sup">®</sup>, neo-angin<sup class="es-neo__sup">®</sup> bez cukru,
+            tabletki do ssania</strong>. 1&nbsp;pastylka twarda/ tabletka do ssania zawiera: 
+            1,2 mg alkoholu 2,4-dichlorobenzylowego (Alcohol 2,4-dichlorobenzylicus), 
+            0,6 mg amylometakrezolu (Amylmetacresolum), 5,9 mg (5,72 mg w&nbsp;przypadku <strong class="es-neo__strong">neo-angin<sup class="es-neo__sup">®</sup> bez cukru</strong>) 
+            lewomentolu (Levomentholum). Wskazania do stosowania: zalecany do wspomagania leczenia 
+            stanów zapalnych jamy ustnej i&nbsp;gardła, przebiegających z&nbsp;objawami, takimi jak: ból gardła, 
+            zaczerwienienie, obrzęk. <br>
+            <strong class="es-neo__strong">Podmiot odpowiedzialny:</strong> MCM Klosterfrau Healthcare sp. z&nbsp;o.o.
+          </div>
+          <div class="es-disclaimer__text">
+            <strong class="es-neo__strong">Benzydamine neo-angin 1,5 mg/ml, Benzydamine neo-angin forte 3 mg/ml,</strong> 
+            aerozol do stosowania w&nbsp;jamie ustnej, roztwór. 1&nbsp;ml roztworu zawiera 1,5 mg 
+            (3 mg w&nbsp;przypadku Benzydamine neo-angin forte) benzydaminy chlorowodorku 
+            (Benzydamini hydrochloridum). Pojedyncza dawka aerozolu (0,17 ml) zawiera 0,255 mg 
+            (0,51 mg w&nbsp;przypadku Benzydamine neo-angin forte) benzydaminy chlorowodorku. 
+            <strong class="es-neo__strong">Wskazania do stosowania:</strong> Aerozol 1,5 mg/ml jest wskazany do stosowania u dorosłych 
+            i&nbsp;dzieci w&nbsp;wieku powyżej 6 lat; aerozol 3 mg/ml jest wskazany do stosowania u dorosłych, 
+            w&nbsp;objawowym miejscowym leczeniu ostrego bólu gardła z&nbsp;towarzyszącymi typowymi objawami 
+            stanu zapalnego, takimi jak ból, zaczerwienienie lub obrzęk w&nbsp;jamie ustnej i&nbsp;gardle. <br>
+            <strong class="es-neo__strong">Podmiot odpowiedzialny:</strong> M.C.M. Klosterfrau Healthcare Sp. z&nbsp;o.o. Hrubieszowska 2, 01-209 Warszawa
+          </div>
+          <div class="es-disclaimer__text es-disclaimer__text--1">
+            NEO.2024.01.17
+          </div>
+          <div class="es-disclaimer__text es-disclaimer__text--2">
+            To jest lek. Dla bezpieczeństwa stosuj go zgodnie z&nbsp;ulotką dołączoną do opakowania. 
+            Nie przekraczaj maksymalnej dawki leku. W&nbsp;przypadku wątpliwości skonsultuj się z&nbsp;lekarzem lub farmaceutą.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="es-disclaimer es-disclaimer--mobile">
+      <div class="es-disclaimer__text">
+        *CHPL neo-angin wiśnia pkt. 5.1: rozpoczyna działanie w&nbsp;ciągu 5-10 minut.
+      </div>
+      <div class="es-disclaimer__text">
+        <strong class="es-neo__strong">neo-angin® wiśnia, pastylki twarde, neo-angin®, neo-angin® bez cukru,
+        tabletki do ssania</strong>. 1&nbsp;pastylka twarda/ tabletka do ssania zawiera: 
+        1,2 mg alkoholu 2,4-dichlorobenzylowego (Alcohol 2,4-dichlorobenzylicus), 
+        0,6 mg amylometakrezolu (Amylmetacresolum), 5,9 mg (5,72 mg w&nbsp;przypadku <strong class="es-neo__strong">neo-angin® bez cukru</strong>) 
+        lewomentolu (Levomentholum). Wskazania do stosowania: zalecany do wspomagania leczenia 
+        stanów zapalnych jamy ustnej i&nbsp;gardła, przebiegających z&nbsp;objawami, takimi jak: ból gardła, 
+        zaczerwienienie, obrzęk. <br>
+        <strong class="es-neo__strong">Podmiot odpowiedzialny:</strong> MCM Klosterfrau Healthcare sp. z&nbsp;o.o.
+      </div>
+      <div class="es-disclaimer__text">
+        <strong class="es-neo__strong">Benzydamine neo-angin 1,5 mg/ml, Benzydamine neo-angin forte 3 mg/ml,</strong> 
+        aerozol do stosowania w&nbsp;jamie ustnej, roztwór. 1&nbsp;ml roztworu zawiera 1,5 mg 
+        (3 mg w&nbsp;przypadku Benzydamine neo-angin forte) benzydaminy chlorowodorku 
+        (Benzydamini hydrochloridum). Pojedyncza dawka aerozolu (0,17 ml) zawiera 0,255 mg 
+        (0,51 mg w&nbsp;przypadku Benzydamine neo-angin forte) benzydaminy chlorowodorku. 
+        <strong class="es-neo__strong">Wskazania do stosowania:</strong> Aerozol 1,5 mg/ml jest wskazany do stosowania u dorosłych 
+        i&nbsp;dzieci w&nbsp;wieku powyżej 6 lat; aerozol 3 mg/ml jest wskazany do stosowania u dorosłych, 
+        w&nbsp;objawowym miejscowym leczeniu ostrego bólu gardła z&nbsp;towarzyszącymi typowymi objawami 
+        stanu zapalnego, takimi jak ból, zaczerwienienie lub obrzęk w&nbsp;jamie ustnej i&nbsp;gardle. <br>
+        <strong class="es-neo__strong">Podmiot odpowiedzialny:</strong> M.C.M. Klosterfrau Healthcare Sp. z&nbsp;o.o. Hrubieszowska 2, 01-209 Warszawa
+      </div>
+      <div class="es-disclaimer__text es-disclaimer__text--1">
+        NEO.2024.01.17
+      </div>
+      <div class="es-disclaimer__text es-disclaimer__text--2">
+        To jest lek. Dla bezpieczeństwa stosuj go zgodnie z&nbsp;ulotką dołączoną do opakowania. 
+        Nie przekraczaj maksymalnej dawki leku. w&nbsp;przypadku wątpliwości skonsultuj się z&nbsp;lekarzem lub farmaceutą.
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
